@@ -22,9 +22,34 @@
 // (0,0,1,0) ➞ true
 // (5,7,0,0) ➞ true
 
+
+
 function collinearity(x1, y1, x2, y2) {
     //define the variables x and y with values of zero
-    let x = 0;
-    let y = 0;
+    // let x
+    // let y
     //use if else statement to return boolean values
+
+    // return false
+    const isPoint1at00 = x1 === 0 && y1 === 0;
+    const isPoint2at00 = x2 === 0 && y2 === 0;
+    if (isPoint1at00 || isPoint2at00) {
+        return true
+    }
+    if (x1 === 0 && x2 === 0 || y1 === 0 && y2 === 0) {
+        return true
+    }
+    if (x1 === 0 || x2 === 0 || y1 === 0 || y2 === 0) {
+        return false
+    }
+    const slope1 = x1 / y1;
+    const slope2 = x2 / y2;
+    return slope1 === slope2
 }
+console.log(collinearity(1, 2, 3, 4));
+console.log(collinearity(0, 1, 3, 4));
+console.log(collinearity(1, 0, 3, 4));
+console.log(collinearity(0, 0, 3, 4));
+console.log(collinearity(1, 2, 0, 0));
+console.log(collinearity(1, 10, 2, 20));
+console.log(collinearity(1, 10, -2, -20));
