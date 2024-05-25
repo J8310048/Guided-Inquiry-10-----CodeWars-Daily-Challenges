@@ -61,4 +61,4 @@ function flickSwitch(arr) {
 
 console.log(flickSwitch(array));
 
-//I wasn't able to solve, but I feel like I'm missing something. I wanted to assign boolean values to each value in the array using a for loop so it'll iterate over each value in order for the assignment to happen.
+//I wasn't able to solve it, but I feel like I'm missing something. I wanted to assign boolean values to each value in the array using a for loop so it'll iterate over each value in the array in order for the assignment to happen. But I don't know how to write that off of memory.

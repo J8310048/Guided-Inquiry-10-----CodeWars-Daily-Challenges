@@ -53,3 +53,5 @@ console.log(collinearity(0, 0, 3, 4));
 console.log(collinearity(1, 2, 0, 0));
 console.log(collinearity(1, 10, 2, 20));
 console.log(collinearity(1, 10, -2, -20));
+
+//Side note: I worked on this with my tech instructor, and I still didn't understand it too well. It got too complicaated when it started referring to lines on a graph.
